@@ -1,0 +1,50 @@
+<head>
+<title>{{ page.title }}</title>
+
+    <meta name="description" content="{{site.title}} - {{page.title}}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="/favicon.ico" />
+    
+    <!-- Meta tags for SEO and social sharing -->
+    <meta name="description" content="{{site.title}} - {{page.title}}">
+    <meta name="keywords" content="art, arte, portfolio, countersurveillance">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="canonical" href="https://avozasos.com/" />
+    <meta
+      name="description"
+      content="A VOZ A SÓS"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="A VOZ A SÓS" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://avozasos.com/" />
+    <meta
+      property="og:description"
+      content="A VOZ A SÓS"
+    />
+    <meta
+      property="og:image"
+      content="/assets/menu.png"
+    />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="{{ site.baseurl }}/js/script.js" defer></script>
+
+    <!-- Import the swipebox javascript file -->  
+    {% if page.swipebox %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/swipebox.min.css" />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+        <script src="{{ site.baseurl }}/js/jquery.swipebox.min.js"></script>
+    {% endif %}
+</head>

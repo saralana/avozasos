@@ -1,0 +1,13 @@
+{% if page.partitura %}
+<section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">  
+    {% assign files = site.static_files | where_exp: files, "files.path contains page.partitura" %}
+        {% for filess in files %}  
+               <p>{{ forloop.length }}</p><br>
+               <p>{{ forloop.index }}</p><br>
+              {% if file.path contains page.partitura %}  
+              {% endif %}
+        {% endfor %}
+     </ol>
+ </section>
+{% endif %}

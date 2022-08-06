@@ -1,0 +1,18 @@
+<div id="navbar">
+
+{% if page.path contains '_posts' %}
+    <a href="/" id="navtitlepost" >A VOZ A SÓS</a>
+{% else %}
+{% if page.title contains '404' %}
+    <a href="/" id="navtitlepost" >A VOZ A SÓS</a>
+{% else %}
+    <a href="/" id="navtitle" >A VOZ A SÓS</a>
+{% endif %}
+{% endif %}
+    <div class="subtitle">
+        <h5>{{ page.who }}</h5>&nbsp;&nbsp;<h5>{{ page.song }}</h5>
+    </div>
+            <div id="main nav-button">
+              <button class="openbtn" onclick="openNav()"><img src="/assets/menu.png"></button>  
+            </div> 
+ </div>

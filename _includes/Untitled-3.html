@@ -1,0 +1,70 @@
+                <li id="carousel__slide{{ forloop.index }}"
+               tabindex="{{ forloop.index }}"
+               class="carousel__slide">
+                <div class="carousel__snapper">
+                    {% if forloop.first %}
+                        <a href="#carousel__slide{{ forloop.length }}"
+                           class="carousel__prev"></a>
+                        {% else}
+                        <a href="#carousel__slide{{ forloop.index | minus 1 }}"
+                           class="carousel__prev"></a>
+                    {% endif %}
+                    {% if forloop.last %}
+                        <img src="{{ site.baseurl }}{{ file.path }}" alt="">
+                        <a href="#carousel__slide1"
+                           class="carousel__next"></a>
+                        {% else %}
+                        <img src="{{ site.baseurl }}{{ file.path }}" alt="">
+                        <a href="#carousel__slide{{ forloop.index | plus 1 }}"
+                           class="carousel__next"></a>
+                    {% endif %}
+                </div>
+           </li>
+           
+           
+                       
+                       
+                       
+                       
+                       
+                       <li id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide">
+                          <div class="carousel__snapper">
+                            <a href="#carousel__slide4"
+                               class="carousel__prev">Go to last slide</a>
+                              <img src="../assets/partituras/petaladesi1.png" alt="">
+                          <a href="#carousel__slide2"
+                               class="carousel__next">Go to next slide</a>
+                          </div>
+                        </li>
+                        <li id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide">
+                          <div class="carousel__snapper"></div>
+                          <a href="#carousel__slide1"
+                             class="carousel__prev">Go to previous slide</a>
+                              <img src="../assets/luisalacerda/luisalacerda02.jpg" alt="">
+                          <a href="#carousel__slide3"
+                             class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide">
+                          <div class="carousel__snapper"></div>
+                          <a href="#carousel__slide2"
+                             class="carousel__prev">Go to previous slide</a>
+                              <img src="../assets/luisalacerda/luisalacerda03.jpg" alt="">
+                          <a href="#carousel__slide4"
+                             class="carousel__next">Go to next slide</a>
+                        </li>
+                        <li id="carousel__slide4"
+                            tabindex="0"
+                            class="carousel__slide">
+                          <div class="carousel__snapper"></div>
+                          <a href="#carousel__slide3"
+                             class="carousel__prev">Go to previous slide</a>
+                              <img src="../assets/luisalacerda/luisalacerda04.jpg" alt="">
+                          <a href="#carousel__slide1"
+                             class="carousel__next">Go to first slide</a>
+                        </li>

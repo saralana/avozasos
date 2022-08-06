@@ -1,0 +1,27 @@
+<style>
+---
+---
+
+</style>
+
+
+{% if page.swipebox %}
+  <div id="swipebox-gallery">
+    {% for file in site.static_files %}
+      {% if file.path contains page.swipebox %}
+        {% unless file.path contains "cover" %}
+          <a href="{{ site.baseurl }}{{ file.path }}" class="swipebox">
+            <img src="{{ site.baseurl }}{{ file.path }}" alt="">
+          </a>
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+{% endif %}
+
+<script type="text/javascript">
+    (function($) {
+      $( '.swipebox' ).swipebox();
+    })(jQuery);
+</script>

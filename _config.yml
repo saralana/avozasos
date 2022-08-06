@@ -1,0 +1,43 @@
+# Site
+title: A VOZ A SÓS
+
+# URL
+url: https://avozasos.com
+baseurl: ''
+
+# default url for pages/posts
+permalink: :title/
+
+# site directory structure specifications | arquivos temporários de css no mesmo diretório
+include: ['_pages']
+sass:
+  sass_dir: css
+
+# Build settings
+markdown: kramdown
+port: 4444
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "post"
+
+# Data
+twitter_user: "avozasos"
+  
+social:
+  facebook: "https://twitter.com/avozasos"
+  instagram: "https://www.instagram.com/avozasos"
+  vimeo: "https://vimeo.com/saralana"
+  paper-plane: "mailto:a.voz.a.sos@gmail.com"
+  
